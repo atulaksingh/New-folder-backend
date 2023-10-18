@@ -3,21 +3,21 @@ const userSchema = new mongoose.Schema({
     username: {
         type: String,
         required: true,
-        trim:true
+        trim: true
     },
     useremail: {
         type: String,
         required: true,
-        unique:true,
-        trim:true
+        unique: true,
+        trim: true
     },
-    userpassword:{
-        type:String,
-        required:true,
-        trim:true
+    userpassword: {
+        type: String,
+        required: true,
+        trim: true
     }
-},{timestamps:true});
+}, { timestamps: true });
 
-const UserModel = mongoose.model("userSchema",userSchema);
+const UserModel = mongoose.model("userSchema", userSchema);
 
 module.exports = UserModel;
