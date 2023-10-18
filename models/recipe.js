@@ -4,6 +4,10 @@ const recipeSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+     // recipe_image: {
+    //     type: String,
+    //     requred: true,
+    // },
     // recipe_image: {
     //     type: String,
     //     requred: true,
