@@ -9,6 +9,8 @@ const path = require("path")
 //     console.log("files", req.files)
 // }
 async function handleSubmitRecipe(req, res) {
+    console.log("ab", req.body)
+    console.log("dj", req.files)
     // const { title, profile } = req.body;
     // console.log("title", req.body)
     // const storage = multer.diskStorage({

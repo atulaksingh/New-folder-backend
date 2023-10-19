@@ -34,6 +34,7 @@ async function handleUserSignup(req, res) {
                 await doc.save()
 
                 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                
                 const savedUser = await UserModel.findOne({ useremail: email })
                 //generate JWT Tokens
                 const token = jwt.sign({ userID: savedUser._id },
